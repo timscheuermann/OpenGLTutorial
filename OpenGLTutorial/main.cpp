@@ -5,6 +5,7 @@
 
 #define SDL_MAIN_HANDLED
 
+
 #ifdef _WIN32
 #include <SDL.h>
 #pragma comment(lib, "SDL2.lib") //Linker Additional Dependencies
