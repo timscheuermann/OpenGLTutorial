@@ -17,6 +17,7 @@
 
 #include "defines.h"
 #include "vertex_buffer.h"
+#include "shader.h"
 
 int main(int argc, char** argv) {
 	SDL_Window* window;
@@ -49,6 +50,9 @@ int main(int argc, char** argv) {
 
 	VertexBuffer vertexBuffer(vertices, numVerticies);
 	vertexBuffer.unbind();
+
+	Shader shader("shaders/basic.vert", "shaders/basic.frag");
+	shader.bind();
 
 	bool close = false;
 	while (!close) {

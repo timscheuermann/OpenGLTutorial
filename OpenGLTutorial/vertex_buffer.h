@@ -1,6 +1,5 @@
 ﻿#pragma once
 #include <GL/GL.h>
-
 #include "defines.h"
 
 struct VertexBuffer {
